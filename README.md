@@ -1,6 +1,5 @@
 # Backtracking Buildings Emissions
-# Team
-    Tony Zhang - tonydqz@bu.edu
+
 ## Background
 According to Boston's Building Emissions Reduction and Disclosure Ordinance (BERDO), organizations with a certain threshold in square footage are required to report the greenhouse gas emissions, energy usage, and energy costs of their buildings. The purpose of BERDO is to make organizations more aware of these factors with the goal of enabling them to reduce all three. For more information on BERDO please refer to their website.
 
@@ -16,3 +15,9 @@ Can you estimate the energy use intensity (EUI) of these new buildings if they w
 ├── README.ME
 └── calculate_eui.ipynb # starter code to help calculate the EUI
 ```
+## Emails 
+Rheona Mehta: Rhemehta@bu.edu
+Tony Zhang:
+Vijay Fisch:
+Trinity Yacoub: 
+
