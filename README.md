@@ -19,4 +19,6 @@ Can you estimate the energy use intensity (EUI) of these new buildings if they w
 Rheona Mehta: Rhemehta@bu.edu
 Tony Zhang: tonydqz@bu.edu
 Vijay Fisch: vfisch@bu.edu  
-Trinity Yacoub: 
+Trinity Yacoub: tyacoub1@bu.edu
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
