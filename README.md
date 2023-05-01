@@ -19,11 +19,18 @@ We were given two data tables (FY2021). The first table contained the columns �
 ## RESULTS:
 After our data cleaning, collecting and analyzing, we came to the conclusion that there is a relationship between E(kWh), G(Therms), and O(gallons). Our random forest feature’s importances analysis found that the most important feature for predicting electricity use was the gross area of a building. 
 The first method we used was linear regression. We excluded the petroleum column from our analyses because it had too many null values for any strong prediction. To create a linear regression model, we created two functions: one that would create a scatter plot with a line of best fit and R2 value based on a building type (residential, academic, etc.), and testing variable, and one that would create a residual plot. Although we had strong R2 values, our residual graphs showed patterns and concentrated values, so we decided to try another model.
+
+
 <img width="623" alt="Screenshot 2023-04-30 at 9 23 18 PM" src="https://user-images.githubusercontent.com/106829297/235387640-d51d103f-8919-40d4-a2be-e08fb47d9127.png">
+
 
 The next model was K Nearest Neighbors. We were unable to use a classifier since our data was numerical and not categorical. Instead, we set training columns and used the regressor model, which resulted in a relatively low R2 value with high variability. In order to improve our results, we moved onto the next method.
         	Our third model was a decision tree regressor. From the regressor we received an R2 value range of 0.88-0.90 with lower variability. Because of the high R2 value we were happy with these results but tried additional methods in hopes of a better R2 value. We moved onto the random forest method, yielding a better R2 value of 0.94 with a fixed random state. With random forest we were able to use the feature importances program which showed that the gross footage of a building is the most important factor when estimating electricity usage.
         	To conclude our methods, we decided to use the ADA boost method because of its ability to improve itself upon each successive run. Ultimately, we reached an R2 value of 0.966 with high confidence. To convey our findings, we created a predictive function that could estimate a building's electricity by taking three arguments: “Gross”, “G(Therms)”, and “Height”, and display a scatter plot of each respective variable with the predicted data and print the R2 value. 
+         
+         
 <img width="599" alt="Screenshot 2023-04-30 at 9 22 55 PM" src="https://user-images.githubusercontent.com/106829297/235387601-40525fa0-60ab-4682-a147-9f7109ec7e1b.png">
+
+
 ## CONCLUSION:
 With worsening climate change affecting coastal communities like Boston, it is more important than ever to use our data-science methods to evaluate our buildings and improve sustainability while reducing emissions. By using machine learning models through python, we were able to create a predictive model that could help predict future building electricity usage, and also help predict data for buildings that have a lack of data collection for certain parameters. 
